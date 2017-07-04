@@ -1,0 +1,5 @@
+dependencies: \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Profiler/RCTFPSGraph.m \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Profiler/RCTFPSGraph.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTAssert.h

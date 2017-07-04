@@ -6,7 +6,7 @@ import Home from './src/components/Home';
 
 
 const MainNavigator = StackNavigator({
-  Home: { screen: Home},
+  Home: { screen: Home },
 });
 
 export default class App extends React.Component {

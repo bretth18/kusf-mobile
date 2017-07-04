@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native-audio-streamer/ios/RNAudioStreamer/RNAudioStreamer.m \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native-audio-streamer/ios/RNAudioStreamer/RNAudioStreamer.h \
+  ../../react-native/React/Base/RCTBridgeModule.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native-audio-streamer/ios/RNAudioStreamer/src/DOUAudioStreamer.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native-audio-streamer/ios/RNAudioStreamer/src/DOUAudioBase.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native-audio-streamer/ios/RNAudioStreamer/src/DOUAudioFile.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native-audio-streamer/ios/RNAudioStreamer/src/DOUAudioFilePreprocessor.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native-audio-streamer/ios/RNAudioStreamer/src/DOUAudioAnalyzer+Default.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native-audio-streamer/ios/RNAudioStreamer/src/DOUAudioAnalyzer.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native-audio-streamer/ios/RNAudioStreamer/RNAudioFileURL.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native-audio-streamer/ios/RNAudioStreamer/src/DOUAudioStreamer+Options.h \
+  ../../react-native/React/Base/RCTEventDispatcher.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h
