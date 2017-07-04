@@ -16,13 +16,15 @@ export default class Home extends React.Component {
 
     this.play = this.play.bind(this);
     this.pause = this.pause.bind(this);
+    this.getTrackFromApi = this.getTrackFromApi.bind(this);
 
     this.state = {
       currentTrack: {},
       isLoading: true,
       trackPlaying: false,
       paused: false,
-      currentShow: null
+      currentShow: null,
+      imageSource: ' ',
     };
   }
 
@@ -30,21 +32,23 @@ export default class Home extends React.Component {
 
     MusicControl.enableBackgroundMode(true);
 
-    return fetch('http://www.kusf.org/api/broadcasting')
-      .then((response) => response.json())
-      .then((responseJson) => {
-        console.log('json response:', responseJson);
-        this.setState({
-          isLoading: false,
-          currentTrack: responseJson.Track,
-          currentShow: responseJson.now,
-        }, function() {
-          // do something with new state
-        });
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    this.getTrackFromApi();
+
+    // return fetch('http://www.kusf.org/api/broadcasting')
+    //   .then((response) => response.json())
+    //   .then((responseJson) => {
+    //     console.log('json response:', responseJson);
+    //     this.setState({
+    //       isLoading: false,
+    //       currentTrack: responseJson.Track,
+    //       currentShow: responseJson.now,
+    //     }, function() {
+    //       // do something with new state
+    //     });
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //   });
   }
 
   play() {
@@ -95,22 +99,26 @@ export default class Home extends React.Component {
     });
   }
 
-  // async getTrackFromApi() {
-  //   try {
-  //     let response = await fetch('http://www.kusf.org/api/broadcasting');
-  //     let responseJson = await response.json();
-  //     console.log(responseJson);
-  //     // uhh
-  //     this.setState({
-  //       currentTrack: responseJson.Track,
-  //       isLoading: false
-  //     });
-  //
-  //     return responseJson.Track;
-  //   } catch(error) {
-  //     console.error(error);
-  //   }
-  // }
+  async getTrackFromApi() {
+    try {
+      let response = await fetch('http://www.kusf.org/api/broadcasting');
+      let responseJson = await response.json();
+      console.log(responseJson);
+      // uhh
+      let imageSource = 'https://lastfm-img2.akamaized.net/i/u/' + responseJson.Track.lastfm_art;
+      this.setState({
+        currentTrack: responseJson.Track,
+        isLoading: false,
+        currentShow: responseJson.now,
+        imageSource: imageSource,
+      });
+      console.log('current state', this.state);
+
+      // return responseJson.Track;
+    } catch(error) {
+      console.error(error);
+    }
+  }
 
 
 
@@ -145,15 +153,16 @@ export default class Home extends React.Component {
         <RkCard rkType='shadowed' style={styles.cardStyle} >
           <View rkCardHeader>
             <Text style={styles.cardText}> Now Playing: </Text>
-            <Text style={styles.cardText}>{this.state.currentShow.title}</Text>
-            <Image rkCardImg source={{uri:this.state.currentShow.Image.url_lg}} />
+            <Text style={styles.cardText}>{this.state.currentShow.title}            <Image rkCardImg style={{width: 30, height: 30}}source={{uri:this.state.currentShow.Image.url_sm}} />
+</Text>
+            {/* <Image rkCardImg source={{uri:this.state.currentShow.Image.url_sm}} /> */}
           </View>
-          <Image rkCardImg source={{uri:imageSource}} />
           <View rkCardContent>
+            <Image  style={{width: 300, height: 300, justifyContent: 'center', alignItems: 'center'}} source={{uri:imageSource}} />
+
             <Text style={styles.cardText}> title: {this.state.currentTrack.title}</Text>
             <Text style={styles.cardText}> artist: {this.state.currentTrack.artist}</Text>
             <Text style={styles.cardText}> year: {this.state.currentTrack.year}</Text>
-
 
           </View>
           <View rkCardFooter>
