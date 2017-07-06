@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Button, Image, StyleSheet, Text, View, ListView, DeviceEventEmitter, ActivityIndicator} from 'react-native';
 import { RkCard, RkButton, RkTheme } from 'react-native-ui-kitten';
 import MusicControl from 'react-native-music-control';
@@ -7,7 +7,7 @@ import { ReactNativeAudioStreaming } from 'react-native-audio-streaming';
 
 const streamUrl = 'http://104.236.145.45:8000/stream';
 
-export default class Home extends React.Component {
+export default class Home extends Component {
 
   constructor(props){
     super(props);
