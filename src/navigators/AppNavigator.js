@@ -6,10 +6,13 @@ import { addNavigationHelpers, StackNavigator } from 'react-navigation';
 import Home from '../components/Home';
 import Demo from '../components/Demo';
 import Player from '../components/Player';
+import Tracks from '../components/Tracks';
+
 
 
 export const AppNavigator = StackNavigator({
   Player: { screen: Player },
+  Tracks: { screen: Tracks },
   // Home: { screen: Home },
 });
 

@@ -1,5 +1,5 @@
 import { FETCHING_DATA, FETCHING_DATA_SUCCESS, FETCHING_DATA_FAILURE } from '../constants/constants';
-import getExternalData from '../api/api';
+import { getExternalData, getTrackList } from '../api/api';
 
 export function getData() {
   return {
@@ -20,6 +20,17 @@ export function getDataFailure() {
   }
 }
 
+// fetches the track playlist
+export function fetchTracks() {
+  return (dispatch) => {
+    dispatch(getData())
+    return getTrackList()
+      .then((trackData) => {
+        dispatch(getDataSuccess(trackData))
+      })
+      .catch((err) => console.log('err:', err))
+  }
+}
 
 export function fetchData() {
   return (dispatch) => {

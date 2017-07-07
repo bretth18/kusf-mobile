@@ -14,9 +14,16 @@ class Player extends Component {
   }
 
   componentDidMount() {
+    // temporary method to poll
     this.props.fetchData();
-    console.log(this.props);
+    let fetchTimer = setInterval(() => {this.props.fetchData()}, 10000);
+    // setTimeout(() => {this.props.fetchData()}, 0);
+    // this.props.fetchData();
+    // console.log(this.props);
+  }
+  componentWillUnmount() {
 
+    clearInterval(fetchTimer);
   }
 
   static navigationOptions = {
@@ -43,8 +50,8 @@ class Player extends Component {
         </View>
       );
     }
+    // debug
     console.log('PROPS RENDER', this.props);
-    // var imageSource = 'https://lastfm-img2.akamaized.net/i/u/'+this.props.appData.data.track.lastfm_art;
     return (
       <View style={styles.container}>
 
@@ -66,7 +73,10 @@ class Player extends Component {
           <View rkCardFooter>
             <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.startStream()}>play</RkButton>
             <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.stopStream()} >stop</RkButton>
-
+            <View >
+              <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.pauseStream()}>pause</RkButton>
+              <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.resumeStream()} >resume</RkButton>
+            </View>
           </View>
 
         </RkCard>
