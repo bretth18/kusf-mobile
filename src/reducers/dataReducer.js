@@ -15,7 +15,8 @@ export default function dataReducer (state = initialState, action) {
       return {
         ...state,
         data: [],
-        isFetching: true
+        isFetching: true,
+        dataFetched: false
       };
     case FETCHING_DATA_SUCCESS:
       return {
@@ -28,7 +29,8 @@ export default function dataReducer (state = initialState, action) {
       return {
         ...state,
         isFetching: false,
-        error: true
+        error: true,
+        dataFetched: false
       };
     default:
       return state

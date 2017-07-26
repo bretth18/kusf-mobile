@@ -16,7 +16,7 @@ class Player extends Component {
   componentDidMount() {
     // temporary method to poll
     this.props.fetchData();
-    let fetchTimer = setInterval(() => {this.props.fetchData()}, 10000);
+    let fetchTimer = setInterval(() => {this.props.fetchData()}, 50000);
     // setTimeout(() => {this.props.fetchData()}, 0);
     // this.props.fetchData();
     // console.log(this.props);
@@ -42,11 +42,40 @@ class Player extends Component {
 
 
   render() {
+    // LOADING SHIT
     if (!this.props.appData.dataFetched) {
       console.log('loading...');
       return (
-        <View style={{flex:1, paddingTop:20}}>
-          <ActivityIndicator />
+
+
+        <View style={styles.container}>
+
+          <RkCard rkType='shadowed' style={styles.cardStyle} >
+            <View rkCardHeader>
+              <Text style={styles.cardText}> Now Playing: </Text>
+              <Text style={styles.cardText}>loading...          </Text>
+            </View>
+            <View rkCardContent>
+              <ActivityIndicator />
+              <Text style={styles.cardText}> title: loading...</Text>
+              <Text style={styles.cardText}> artist: loading...</Text>
+              <Text style={styles.cardText}> year: loading...</Text>
+
+            </View>
+            <View rkCardFooter>
+              <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.startStream()}>play</RkButton>
+              <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.stopStream()} >stop</RkButton>
+              <View >
+                <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.pauseStream()}>pause</RkButton>
+                <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.resumeStream()} >resume</RkButton>
+                <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => Actions.tracks()} >tracks</RkButton>
+
+              </View>
+              <Button color={styles.button} title="tracks"  onPress={() => Actions.tracks()} />
+
+            </View>
+
+          </RkCard>
         </View>
       );
     }
@@ -69,19 +98,22 @@ class Player extends Component {
             <Text style={styles.cardText}> artist: {this.props.appData.data.Track.artist}</Text>
             <Text style={styles.cardText}> year: {this.props.appData.data.Track.year}</Text>
 
+
           </View>
-          <View rkCardFooter>
+          <View rkCardFooter style={{justifyContent: "center"}}>
             <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.startStream()}>play</RkButton>
             <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.stopStream()} >stop</RkButton>
-            <View >
+
               <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.pauseStream()}>pause</RkButton>
               <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.resumeStream()} >resume</RkButton>
-              <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => Actions.tracks()} >tracks</RkButton>
 
-            </View>
+
+
           </View>
 
         </RkCard>
+        <Button color="#9EEFE5" title="track list" onPress={() => Actions.tracks()} />
+
       </View>
     );
   }
@@ -96,6 +128,12 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: '#C0E0DE',
+    paddingRight: 10,
+    paddingLeft: 10,
+    marginLeft: 5,
+    marginRight: 5,
+    width:80,
+    height:30,
   },
   contentButton: {
     color: '#3C474B'

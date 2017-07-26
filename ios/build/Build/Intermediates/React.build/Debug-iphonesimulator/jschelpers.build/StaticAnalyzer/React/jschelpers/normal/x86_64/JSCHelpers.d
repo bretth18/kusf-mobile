@@ -1,6 +1,8 @@
 dependencies: \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/ReactCommon/jschelpers/JSCHelpers.cpp \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/ReactCommon/jschelpers/JSCHelpers.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/jschelpers/JavaScriptCore.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/jschelpers/JSCWrapper.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/jschelpers/Value.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/dynamic.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/boost_1_63_0/boost/operators.hpp \
@@ -372,7 +374,5 @@ dependencies: \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/Format-inl.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/Exception.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/portability/Windows.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/jschelpers/JavaScriptCore.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/jschelpers/JSCWrapper.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/jschelpers/Unicode.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/jschelpers/noncopyable.h

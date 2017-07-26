@@ -391,5 +391,6 @@ dependencies: \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/cxxreact/JSModulesUnbundle.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/cxxreact/MessageQueueThread.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/cxxreact/MethodCall.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/cxxreact/JsArgumentHelpers.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/cxxreact/JsArgumentHelpers-inl.h
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/ReactCommon/cxxreact/JsArgumentHelpers.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../ReactCommon/cxxreact/JsArgumentHelpers-inl.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/ReactCommon/cxxreact/SystraceSection.h

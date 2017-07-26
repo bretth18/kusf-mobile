@@ -69,7 +69,7 @@ class Tracks extends Component {
               return <View key={i} >
 
                 <Text> title: {id.title} </Text>
-                <Text> artist: {id.artist} </Text>
+                <Text> artist: {id.artistls} </Text>
                 <Text> played: {id.played} </Text>
               </View>
             })

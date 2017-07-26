@@ -29,4 +29,6 @@ dependencies: \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/Libraries/Text/RCTConvert+Text.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/Libraries/Text/RCTShadowTextField.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/Libraries/Text/RCTTextField.h
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/Libraries/Text/RCTTextField.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTView.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/Libraries/Text/RCTUITextField.h

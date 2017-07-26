@@ -9,10 +9,19 @@ dependencies: \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTBridgeModule.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTFrameUpdate.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/CxxModule/RCTCxxUtils.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Views/RCTBorderStyle.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTLog.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTAssert.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/Platform.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSCExecutor.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/Executor.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSBigString.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/Exception.h \
@@ -386,9 +395,15 @@ dependencies: \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/FormatArg.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/Format-inl.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/portability/Windows.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/MessageQueueThread.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSCNativeModules.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/ModuleRegistry.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/NativeModule.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/Value.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/Value.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/Unicode.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/noncopyable.h
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/noncopyable.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/json.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCHelpers.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/Platform.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/MessageQueueThread.h

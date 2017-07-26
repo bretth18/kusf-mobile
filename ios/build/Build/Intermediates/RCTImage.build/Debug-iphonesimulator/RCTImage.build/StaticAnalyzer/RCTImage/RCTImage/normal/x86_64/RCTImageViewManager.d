@@ -27,4 +27,7 @@ dependencies: \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTResizeMode.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestHandler.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestDelegate.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/Libraries/Image/RCTImageShadowView.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/Libraries/Image/RCTImageView.h

@@ -406,7 +406,6 @@ dependencies: \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/noncopyable.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/json.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCHelpers.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/DevSupport/RCTDevLoadingView.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Modules/RCTDevSettings.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTDisplayLink.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTModuleData.h \
@@ -428,4 +427,5 @@ dependencies: \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/CxxBridge/RCTJSCHelpers.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/CxxBridge/RCTMessageThread.h \
   /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
-  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/CxxBridge/RCTObjcExecutor.h
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/CxxBridge/RCTObjcExecutor.h \
+  /Users/bretthenderson/Developer/reactDev/sfrent/node_modules/react-native/React/DevSupport/RCTDevLoadingView.h

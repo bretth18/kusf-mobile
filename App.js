@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
-import { Router, Scene } from 'react-native-router-flux';
+import { Router, Scene, Actions } from 'react-native-router-flux';
 
 import Player from './src/components/Player';
 import Tracks from './src/components/Tracks';
@@ -12,8 +12,10 @@ export default class App extends Component {
     return (
       <Router>
         <Scene key="root">
-          <Scene key="home" component={Player} title="Home" initial ></Scene>
-          <Scene key="tracks" component={Tracks} title="tracks" ></Scene>
+          <Scene key="home" component={Player} title="Home" initial
+             ></Scene>
+          <Scene key="tracks" component={Tracks} title="tracks"
+            onExit={() => Actions.pop()}></Scene>
         </Scene>
       </Router>
     );
