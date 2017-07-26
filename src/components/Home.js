@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, Image, StyleSheet, Text, View, ListView, DeviceEventEmitter, ActivityIndicator} from 'react-native';
 import { RkCard, RkButton, RkTheme } from 'react-native-ui-kitten';
 import MusicControl from 'react-native-music-control';
-
+import { Actions } from 'react-native-router-flux';
 import { ReactNativeAudioStreaming } from 'react-native-audio-streaming';
 
 const streamUrl = 'http://104.236.145.45:8000/stream';
@@ -168,6 +168,7 @@ export default class Home extends Component {
           <View rkCardFooter>
             <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.play()}>play</RkButton>
             <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.pause()} >pause</RkButton>
+            <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => Actions.tracks()} >tracks</RkButton>
 
           </View>
 

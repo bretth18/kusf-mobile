@@ -4,7 +4,7 @@ import { RkCard, RkButton, RkTheme } from 'react-native-ui-kitten';
 import { connect } from 'react-redux';
 import { fetchData } from '../actions/actions';
 import { startStream, stopStream, pauseStream, resumeStream } from '../actions/mediaActions';
-
+import { Actions } from 'react-native-router-flux'
 
 class Player extends Component {
 
@@ -76,6 +76,8 @@ class Player extends Component {
             <View >
               <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.pauseStream()}>pause</RkButton>
               <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => this.props.resumeStream()} >resume</RkButton>
+              <RkButton style={styles.button} contentStyle={styles.contentButton} onPress={() => Actions.tracks()} >tracks</RkButton>
+
             </View>
           </View>
 

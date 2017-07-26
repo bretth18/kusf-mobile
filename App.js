@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { Router, Scene } from 'react-native-router-flux';
 
-import Home from './src/components/Home';
+import Player from './src/components/Player';
+import Tracks from './src/components/Tracks';
 
 
-const MainNavigator = StackNavigator({
-  Home: { screen: Home },
-});
 
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <MainNavigator style={{ width: Dimensions.get('window').width }} />
-      </View>
+      <Router>
+        <Scene key="root">
+          <Scene key="home" component={Player} title="Home" initial ></Scene>
+          <Scene key="tracks" component={Tracks} title="tracks" ></Scene>
+        </Scene>
+      </Router>
     );
   }
 }
